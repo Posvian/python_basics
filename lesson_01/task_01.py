@@ -17,9 +17,9 @@ second_amount = duration % day_duration % hour_duration % minute_duration
 
 if duration < minute_duration:
     print(second_amount, 'сек')
-elif duration >= minute_duration and duration < hour_duration:
+elif minute_duration <= duration < hour_duration:
     print(minute_amount, 'мин', second_amount, 'сек')
-elif duration >= hour_duration and duration < day_duration:
+elif hour_duration <= duration < day_duration:
     print(hour_amount, 'час', minute_amount, 'мин', second_amount, 'сек')
 else:
     print(day_amount, 'дн', hour_amount, 'час', minute_amount, 'мин', second_amount, 'сек')
