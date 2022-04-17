@@ -5,7 +5,7 @@
 # до суток: <h> час <m> мин <s> сек;
 # * в остальных случаях: <d> дн <h> час <m> мин <s> сек.
 
-duration = 86401
+duration = 400153
 minute_duration = 60
 hour_duration = minute_duration * 60
 day_duration = hour_duration * 24
