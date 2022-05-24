@@ -13,7 +13,7 @@ def type_logger(func):
             for arg in kwargs:
                 print(f"'{arg}' = {kwargs[arg]}: {type(kwargs[arg])}")
         rezult = func(*args, **kwargs)
-        return f'Rezult: {rezult}  type: {type(rezult)}'
+        print(f'Rezult: {rezult}  type: {type(rezult)}')
     return temp
 
 
@@ -27,5 +27,5 @@ def calc_cube(x):
     return x ** 3
 
 
-print(calc_cube(5))
-print(render_input(1, a=2, b=True, c="q"))
+calc_cube(5)
+render_input(1, a=2, b=True, c="q")
