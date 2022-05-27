@@ -10,23 +10,32 @@ class Stationery:
 
 
 class Pen(Stationery):
+    def __init__(self):
+        super().__init__('ручка')
+
     def draw(self):
         print('Запуск отрисовки ручкой')
 
 
 class Pencil(Stationery):
+    def __init__(self):
+        super().__init__('карандаш')
+
     def draw(self):
         print('Запуск отрисовки карандашем')
 
 
 class Handle(Stationery):
+    def __init__(self):
+        super().__init__('маркер')
+
     def draw(self):
         print('Запуск отрисовки маркером')
 
 
-a = Pen('Ручка')
+a = Pen()
 a.draw()
-b = Pencil('Карандаш')
+b = Pencil()
 b.draw()
-c = Handle('Маркер')
+c = Handle()
 c.draw()
